@@ -11,10 +11,7 @@
   "dependencies": {
     "node-fetch": "^3.3.2"
   },
-  "devDependencies": {
-    "vercel": "^33.0.1"
-  },
   "engines": {
-    "node": ">=18.x"
+    "node": ">=20.x"
   }
 }
