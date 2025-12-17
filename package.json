@@ -1,15 +1,27 @@
 {
-  "name": "ytmp3-vercel",
+  "name": "ytmp3-vercel-api",
   "version": "1.0.0",
-  "description": "YouTube MP3 Downloader API",
+  "description": "YouTube MP3 Downloader API for Vercel",
   "main": "api/ytmp3.js",
   "type": "module",
   "scripts": {
     "dev": "vercel dev",
     "deploy": "vercel --prod"
   },
+  "keywords": [
+    "youtube",
+    "mp3",
+    "downloader",
+    "api",
+    "vercel",
+    "serverless"
+  ],
+  "author": "Fathur & MADYAA Dev",
+  "license": "MIT",
   "dependencies": {
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2"
   },
   "engines": {
     "node": "20"
