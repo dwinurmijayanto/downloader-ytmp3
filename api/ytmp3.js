@@ -1,5 +1,5 @@
 // api/ytmp3.js
-import fetch from 'node-fetch';
+// Menggunakan native fetch (Node.js 18+)
 
 // ========== HUGGINGFACE GRADIO CONFIG ==========
 const GRADIO_CONFIG = {
