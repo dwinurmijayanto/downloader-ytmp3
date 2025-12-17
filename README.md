@@ -179,15 +179,28 @@ RAPIDAPI_KEY=your_rapidapi_key_here
 npm install
 ```
 
+### Error: Node version warning
+Jika masih muncul warning tentang Node.js version:
+1. Pastikan file `.nvmrc` ada dengan value `20`
+2. Pastikan `package.json` memiliki `"node": "20"`
+3. Clear Vercel cache: Settings → General → Clear Cache
+4. Redeploy
+
 ### Error: Timeout
 - Tingkatkan `maxDuration` di `vercel.json`
 - Default Vercel free tier: 10 detik
 - Pro tier: hingga 60 detik
 
 ### Error: Memory limit
-- Tingkatkan `memory` di `vercel.json`
-- Default: 1024 MB
-- Max: 3008 MB (Pro)
+- Vercel sekarang menggunakan Active CPU billing
+- Memory auto-scaling, tidak perlu set manual
+
+### Error: Build cache
+Jika build menggunakan cache lama:
+```bash
+# Force clean deploy
+vercel --prod --force
+```
 
 ## 📊 Rate Limits
 
