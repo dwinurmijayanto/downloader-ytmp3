@@ -1,8 +1,10 @@
 {
   "version": 2,
+  "buildCommand": "echo 'No build needed'",
   "functions": {
     "api/**/*.js": {
-      "maxDuration": 60
+      "maxDuration": 60,
+      "runtime": "nodejs20.x"
     }
   },
   "rewrites": [
